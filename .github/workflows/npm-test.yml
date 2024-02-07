@@ -1,0 +1,26 @@
+name: NPM Test Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  npm-test-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run Jest Tests
+      run: npm test
+
+    - name: Create Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist
+        path: dist
