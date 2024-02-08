@@ -19,12 +19,10 @@ jobs:
           node-version: 20
 
       - name: Navigate to Project Directory
-        run: cd lab1
+        run: cd lab1 && ls -la
 
       - name: Install Dependencies
-        run: |
-          npm install
-          ls -l node_modules
+        run: npm install
 
       - name: Run Jest Tests
         run: npm test
