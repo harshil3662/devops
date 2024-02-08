@@ -22,7 +22,9 @@ jobs:
         run: cd lab1
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install
+          ls -l node_modules
 
       - name: Run Jest Tests
         run: npm test
