@@ -19,7 +19,7 @@ jobs:
           node-version: 20
 
       - name: Navigate to Project Directory
-        run: cd /lab1
+        run: cd lab1
 
       - name: Install Dependencies
         run: npm install
