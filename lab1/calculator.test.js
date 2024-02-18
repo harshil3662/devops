@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 const calculator = require('./calculator');
 
 describe('Calculator', () => {
