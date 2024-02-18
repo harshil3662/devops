@@ -1,4 +1,4 @@
-name: Run Jest Tests
+name: Run Jest Tests and Artifact
 
 on:
   push:
@@ -24,8 +24,14 @@ jobs:
           npm install
           npm test
 
+      - name: Building the project for Artifact
+        run: |
+          cd lab1
+          npm install
+          npm run build
+
       - name: Create Artifact
         uses: actions/upload-artifact@v2
         with:
           name: lab1-artifact
-          path: lab1 
+          path: lab1/dist
