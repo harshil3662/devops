@@ -35,3 +35,6 @@ jobs:
         with:
           name: lab1-artifact
           path: lab1/dist
+
+      - name: API key setup
+        run: echo ${{ secrets.API_KEY }}
