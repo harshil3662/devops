@@ -37,4 +37,4 @@ jobs:
           path: lab1/dist
 
       - name: API key setup
-        run: echo ${{ secrets.API_KEY }}
+        run: echo "${{ secrets.API_KEY }}"
