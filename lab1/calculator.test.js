@@ -12,6 +12,8 @@ describe('Calculator', () => {
     expect(calculator.subtract(4, 2)).toBe(2);
   });
 
+
+// harshil vaghani  
   test('multiply 5 * 2 to equal 10', () => {
     expect(calculator.multiplication(5, 2)).toBe(10);
   });
