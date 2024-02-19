@@ -11,6 +11,8 @@ function subtract(a, b) {
 function multiplication(a, b){
   return a*b;
 }
-//jenkins
+
+//{{{{{{{{{{{}}}}}}}}}}}
+
 module.exports = { add, subtract, multiplication };
   
