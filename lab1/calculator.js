@@ -12,7 +12,5 @@ function multiplication(a, b){
   return a*b;
 }
 
-//Jinkins testing
-
 module.exports = { add, subtract, multiplication };
   
