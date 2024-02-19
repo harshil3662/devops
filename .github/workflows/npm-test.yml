@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Navigate to Project Directory
+      - name: Jest Unit Testing
         run: |
           cd lab1
           npm install

@@ -12,7 +12,5 @@ function multiplication(a, b){
   return a*b;
 }
 
-//Harshil Vaghani
-
 module.exports = { add, subtract, multiplication };
   
