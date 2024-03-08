@@ -19,7 +19,7 @@ resource "docker_container" "nginx" {
   name  = "tutorial"
 
   provisioner "local-exec" {
-    command = "docker cp ${local_file.dist_files.destination}/. ${docker_container.web.name}:/usr/share/nginx/html"
+    command = "docker cp ${local_file.dist_files.filename}/. ${docker_container.nginx.name}:/usr/share/nginx/html"
   }
 
   ports {
@@ -29,6 +29,6 @@ resource "docker_container" "nginx" {
 }
 
 resource "local_file" "dist_files" {
-  source      = "path/to/dist"  # Replace with the path to your dist folder
-  destination = "path/to/terraform-dist"
+  filename = "${path.module}/dist/main.tf"
+  content  = file("${path.module}/../terraform-docker/main.tf")
 }
