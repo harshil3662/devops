@@ -45,7 +45,7 @@
 <br>
 <img width="893" alt="resource-2" src="https://github.com/harshil3662/devops/assets/87032930/d4a709c5-771d-4947-a189-9a3ccad185f9">
 
-
+- As we can see inside the terraform-docker folder, there is a dist folder which holds main.tf. I pushed the changed folder structure in my github repo.
 
 
 
